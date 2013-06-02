@@ -1,0 +1,43 @@
+<div id="map">
+</div>
+<%= render partial: 'form'%>
+<div id="info_box">
+	<div id="send_email">
+        <form action='groups/show' method='post' >
+      	 	<input name="email" onfocus="if (this.value=='Your Email Address') 
+         	this.value = ''" id="email_address" type="text" value="Your Email Address">
+         	<input type="button" value="Send Me Details" class="button" onclick="sendEmail()"/>
+        </form>
+     </div>
+    <div id="name_of_hike"><span>Royal Arch</span></div>
+    <div id="pick_this_hike">This is the hike for me!</div>
+    <div id="stats_on_hike">
+    	<div id="difficulty" class="grey_text">Difficulty</div>
+        <div id="difficulty_value" class="green_text">Mid-Moderate</div>
+        <div id="distance" class="grey_text">Distance</div>
+        <div id="distance_value" class="green_text">3.2 Miles</div>
+        <div id="estimated_time" class="grey_text">Estimated Time</div>
+        <div id="estimated_time_value" class="green_text">2 Hours</div>
+        <div id="elevation_gain" class="grey_text">Elevation Gain</div>
+        <div id="elevation_gain_value" class="green_text">1205 ft</div>
+    </div>        
+    <div id="hike_description" class="grey_text">
+    	<div id="inner_description">
+        <p>Royal Arch is perched high along a rugged fold in the Boulder Flatirons. 
+        These rocks are remnants of the Fountain Formation, a mineral-rich sand 
+        eroded from the ancestral Rocky Mountain uplift 300 million years ago. 
+        Sediments deposited by the ebb and flow of inland oceans compressed 
+        this layer into sandstone, thrust upward 45 million years ago by the same 
+        tectonic forces that created our modern Rocky Mountains.<p>
+        </div>
+    </div>
+    <div id="left_edge"></div>
+    <div id="right_edge"></div>
+    <div id="top_edge"><%= image_tag 'top_edge.png' %></div>
+    <div id="bottom_edge"><%= image_tag 'bottom_edge.png'%></div>
+</div>
+ 
+    
+
+  	
+    

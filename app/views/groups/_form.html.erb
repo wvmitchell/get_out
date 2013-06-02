@@ -1,0 +1,55 @@
+<div id="form_container">
+    <div class="form_tab">
+    	<%= image_tag "pull_tab.png" %>
+    </div>
+    <form>
+        <h1>Let's narrow these hikes down for you</h1>
+        <br />
+        <h2>You're hiking from?</h2>
+            <!--<select id="hike_location" class="styled">
+                <option></option>
+		        <option value="Fort Collins">Fort Collins</option>
+		        <option value="Boulder">Boulder</option>
+		        <option value="Durango">Durango</option>
+		        <option value="Golden">Golden</option>
+				<option value="Grand Junction">Grand Junction</option>
+				<option value="Pueblo">Pueblo</option>
+            </select>-->
+			<input id="location"/>
+			<span id="holdcellID" style="display: none"></span>
+			<span id="holdcellVal" style="display: none"></span>
+        <h2>For how long?</h2>
+           <select id="hike_duration" class="styled">
+           		<option></option>
+                <option value="1">An hour</option>
+                <option value="2.5">Two or three hours</option>
+                <option value="4">A half day</option>
+                <option value="8">The whole day</option>
+                <option value="12">Multiple days</option>
+            </select>
+        <h2>And when are you going?</h2>
+            <select id="hike_day" class="styled">
+            	<option value="day"></option>
+                <option value="day">Saturday</option>
+                <option value="day">Sunday</option>  
+                <option value="day">Monday</option>  
+                <option value="day">Tuesday</option>  
+                <option value="day">Wednesday</option>  
+                <option value="day">Thursday</option>  
+                <option value="day">Friday</option>  
+            </select>
+            
+            <input type="checkbox" id="kids" name="kids" />
+			<label for="kids"><span></span>&nbsp;&nbsp;Kids?</label>
+            <br />
+        	
+            <input type="checkbox" id="seniors" name="seniors" />
+			<label for="seniors"><span></span>&nbsp;&nbsp;Seniors?</label><br />
+            
+        	<input type="checkbox" id="dogs" name="dogs" />
+			<label for="dogs"><span></span>&nbsp;&nbsp;Dogs?</label>
+            <input type="button" id="submit" value="Populate" name="submit" onclick="findHikes()" />
+    </form>
+    <%= image_tag "top_bar_slide.png", :class => "top_bar" %>
+    <%= image_tag "bottom_bar_slide.png", :class => "bottom_bar" %>
+</div>

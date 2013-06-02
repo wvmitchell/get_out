@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date_of_hike: 2013-06-01
+  no_of_hikers: 1
+  kids: false
+  hours_of_hiking: 1.5
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  date_of_hike: 2013-06-01
+  no_of_hikers: 1
+  kids: false
+  hours_of_hiking: 1.5
+  latitude: 1.5
+  longitude: 1.5
