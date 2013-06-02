@@ -63,9 +63,9 @@ $(function() {
 
 function findHikes(){
 	// Find text location
-	var locations = document.getElementById("location").value;
-	//var address = locations.options[locations.selectedIndex].value;
-	console.log(locations);
+	var locations = document.getElementById("hike_location");
+	var address = locations.options[locations.selectedIndex].value;
+	
 	var d = document.getElementById("hike_duration");
 	var duration = d.options[d.selectedIndex].value * 3600;
 	
@@ -83,7 +83,7 @@ function findHikes(){
 		
 			latitude = results[0].geometry.location.lat();
 			longitude = results[0].geometry.location.lng();
-			console.log(duration);
+			
 			// AJAX request to use external api
 			$.post("groups/hike_array", {lat: latitude, lng: longitude, time: duration},
 				function(data){
