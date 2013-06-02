@@ -1,6 +1,6 @@
 GetOut::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-  ActionMailer::Base.smtp_settings = {
+=begin ActionMailer::Base.smtp_settings = {
     :port           => '25',
     :address        => ENV['POSTMARK_SMTP_SERVER'],
     :user_name      => ENV['POSTMARK_API_KEY'],
@@ -11,7 +11,7 @@ GetOut::Application.configure do
   }
 
   ActionMailer::Base.delivery_method = :smtp
-
+=end
   # Code is not reloaded between requests
   config.cache_classes = true
 
