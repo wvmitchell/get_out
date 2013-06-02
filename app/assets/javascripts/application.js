@@ -120,6 +120,7 @@ function findHikes(){
 						}
 						
 						google.maps.event.addListener(mark, 'click', function(){
+							map.panTo(this.position);
 							closeSlider();
 							$("#hike_description").children().text(this.desc);
 							$("#distance_value").text(this.dist+" miles");
