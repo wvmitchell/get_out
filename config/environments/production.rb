@@ -1,5 +1,16 @@
 GetOut::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+  ActionMailer::Base.smtp_settings = {
+    :port           => '25',
+    :address        => ENV['POSTMARK_SMTP_SERVER'],
+    :user_name      => ENV['POSTMARK_API_KEY'],
+    :password       => ENV['POSTMARK_API_KEY'],
+    :domain         => "get-out.heroku.com",
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+
+  ActionMailer::Base.delivery_method = :smtp
 
   # Code is not reloaded between requests
   config.cache_classes = true

@@ -58,5 +58,10 @@ module GetOut
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Postmark assets
+    POSTMARK_API_KEY:             'c6d68886-a63f-4566-a908-fa0b465f09a7',
+    POSTMARK_INBOUND_ADDRESS:     '1e1b6f2a31b2d0cb085b3f4f1125b8c4@inbound.postmarkapp.com',
+    POSTMARK_SMTP_SERVER:         'smtp.postmarkapp.com'
   end
 end

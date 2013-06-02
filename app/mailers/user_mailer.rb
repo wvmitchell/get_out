@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "itinerary@getout.com"
+  default from: "itinerary@get-out.herokuapp.com"
   
   def itinerary_email(email, tname, dist, dif, time)
     @email = email
